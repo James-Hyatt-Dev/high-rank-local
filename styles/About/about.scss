@@ -1,0 +1,130 @@
+.aboutContainer {
+    width: 100vw;
+    margin-top: 10em;
+    background-image: url('../../public/AboutBackground.webp');
+    background-size: 100vw ;
+    background-repeat: no-repeat;
+
+    .aboutWrapper {
+        width: 100vw;
+        background: var(--background-linear);
+        height: 70vh;
+
+        .aboutInner {
+            display: flex;
+            width: 70vw;
+            margin: auto;
+            gap: 3em;
+            align-items: center;
+
+            .aboutLeft {
+                z-index: 2;
+            }
+
+            .aboutRight {
+                width: 100%;
+                line-height: 1.5;
+
+                h1 span {
+                    font-weight: 100;
+                }
+
+                p {
+                    font-weight: 100;
+                    font-size: 1.5rem;
+
+                    span {
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// media queries
+@media screen and (max-width:1731px) {
+    .aboutContainer {
+        background-size: 200vw;
+        background-position: center;
+        height: auto;
+
+        .aboutWrapper {
+            height: auto;
+        }
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .aboutContainer .aboutWrapper .aboutInner {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .aboutContainer .aboutWrapper .aboutInner {
+        width: 100vw;
+        position: relative;
+
+        .aboutLeft {
+            width: 100vw;
+            position: absolute;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+
+            img {
+                opacity: .5;
+            }
+        }
+
+        .aboutRight {
+            width: 90vw;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .aboutContainer {
+        background-size: 500vw;
+        background-position: center;
+        height: auto;
+
+        .aboutWrapper {
+            height: auto;
+        }
+    }
+}
+
+@media screen and (max-width:422px) {
+    .aboutContainer .aboutWrapper .aboutInner {
+
+        .aboutRight {
+            text-align: center;
+
+            h1 {
+                font-size: 1.5rem;
+                margin-top: -10vh;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
+
+@media screen and (max-width:317px) {
+    .aboutContainer .aboutWrapper .aboutInner img {
+        width: 150px;
+        height: 150px;
+    }
+}

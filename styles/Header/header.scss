@@ -1,0 +1,48 @@
+.headerContainer {
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .headerLeft, .headerRight {
+        display: flex;
+        align-items: center;
+        padding: 1em 2em 1em 0;
+
+        span {
+            font-weight: 100;
+        }
+    }
+
+    .MuiButtonBase-root {
+        background: var(--primary);
+        border-radius: 0;
+        color: var(--secondary);
+    }
+}
+
+// media queries
+
+@media screen and ( max-width: 500px) {
+    .headerContainer {
+        display: flex;
+        flex-direction: column;
+
+        .headerLeft, .headerRight {
+            padding: 0;
+        }
+
+        .MuiButtonBase-root {
+            width: 90vw;
+            display: flex;
+    
+        }
+    }
+}
+
+@media screen and ( max-width: 350px) {
+    .headerContainer .headerLeft h1 {
+        font-size: 1.5rem;
+    }
+}

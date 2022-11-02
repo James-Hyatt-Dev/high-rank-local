@@ -1,0 +1,100 @@
+.localContainer {
+  width: 100vw;
+}
+.localContainer .localWrapper {
+  width: 70vw;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+.localContainer .localWrapper .localHeading {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.localContainer .localWrapper .localHeading h1 {
+  font-weight: 100;
+  font-size: 2.7rem;
+}
+.localContainer .localWrapper .localHeading h1 span {
+  font-weight: 400;
+}
+.localContainer .localWrapper .localMapImage {
+  display: flex;
+  width: 100%;
+  background-image: url("../../public/LocalMap.png");
+  background-repeat: no-repeat;
+  background-size: 35vw;
+  height: 25vh;
+  background-position: right;
+}
+.localContainer .localWrapper .localMapImage .localMapImageOverlay {
+  background: var(--overlay);
+  height: 100%;
+  width: 100%;
+}
+.localContainer .localWrapper .moreGroup {
+  display: flex;
+  gap: 5em;
+  justify-content: center;
+  margin-top: 5em;
+}
+.localContainer .localWrapper .moreGroup .moreItem {
+  background: var(--accent);
+  padding: 3em;
+  width: 34%;
+  text-align: center;
+  position: relative;
+}
+.localContainer .localWrapper .moreGroup .moreItem p {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.localContainer .localWrapper .moreGroup .moreItem .moreButton {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.localContainer .localWrapper .moreGroup .moreItem .moreButton .MuiButtonBase-root {
+  color: var(--secondary);
+  background: var(--primary);
+  border-radius: 0;
+  width: 80%;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 1500px) {
+  .localContainer .localWrapper {
+    width: 95vw;
+  }
+  .localContainer .localWrapper .localHeading {
+    justify-content: center;
+  }
+  .localContainer .localWrapper .localMapImage {
+    background-position: center;
+  }
+}
+@media screen and (max-width: 1109px) {
+  .localContainer .localWrapper .moreGroup {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .localContainer .localWrapper .moreGroup .moreItem {
+    width: 90vw;
+  }
+  .localContainer .localWrapper .localMapImage {
+    background-size: 75vw;
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 584px) {
+  .localContainer .localWrapper {
+    text-align: center;
+    display: flex;
+    margin: auto;
+  }
+}/*# sourceMappingURL=local.css.map */

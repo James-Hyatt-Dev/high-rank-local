@@ -1,0 +1,190 @@
+.howContainer {
+  width: 100vw;
+  background-image: url("../../public/CapeCoralHow.jpeg");
+  background-repeat: no-repeat;
+  background-size: 200vw;
+  background-position: center;
+  height: 150vh;
+}
+.howContainer .howWrapper {
+  width: 100vw;
+  height: 150vh;
+  background: var(--background-linear);
+  display: flex;
+  flex-direction: column;
+}
+.howContainer .howWrapper .howHeading h1 {
+  font-weight: 100;
+  text-align: center;
+  width: 100vw;
+  font-size: 3rem;
+}
+.howContainer .howWrapper .howHeading h1 span {
+  font-weight: normal;
+}
+.howContainer .howWrapper .howContent {
+  width: 100%;
+  display: flex;
+  gap: 5em;
+  align-items: center;
+}
+.howContainer .howWrapper .howContent .howInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 50%;
+}
+.howContainer .howWrapper .howContent .howInfoText {
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+.howContainer .howWrapper .howContent .howInfoText span {
+  font-weight: normal;
+}
+.howContainer .howWrapper .howContent .howImage {
+  width: 50%;
+  z-index: 2;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.howContainer .howWrapper .howContent .howImage .howImage1 {
+  height: auto;
+}
+.howContainer .howWrapper .howContent .howImage .howImage1 .MuiSvgIcon-root {
+  font-size: 400px;
+  color: var(--primary);
+  opacity: 0.3;
+}
+.howContainer .howWrapper .howContentWrapper {
+  width: 70vw;
+  margin: 1em auto;
+}
+.howContainer .howWrapper .howContentWrapper #reverse {
+  flex-direction: row-reverse;
+  display: flex;
+}
+
+@media screen and (max-width: 1900px) {
+  .howContainer {
+    height: 165vh;
+    background-size: 300vh;
+  }
+  .howContainer .howWrapper {
+    height: 165vh;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .howContainer .howWrapper .howContentWrapper .howContent .howImage .MuiSvgIcon-root {
+    font-size: 300px;
+  }
+}
+@media screen and (max-width: 1420px) {
+  .howContainer {
+    height: 175vh;
+    background-size: 300vh;
+  }
+  .howContainer .howWrapper {
+    height: 175vh;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .howContainer {
+    height: 195vh;
+    background-size: 400vh;
+  }
+  .howContainer .howWrapper {
+    height: 195vh;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .howContainer {
+    height: 215vh;
+    background-size: 500vh;
+  }
+  .howContainer .howWrapper {
+    height: 215vh;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .howContainer {
+    height: 235vh;
+    background-size: 500vh;
+  }
+  .howContainer .howWrapper {
+    height: 235vh;
+  }
+  .howContainer .howWrapper .howContentWrapper .howContent .howImage .MuiSvgIcon-root {
+    font-size: 200px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .howContainer {
+    height: 125vh;
+    background-size: 300vh;
+  }
+  .howContainer .howWrapper {
+    height: 125vh;
+  }
+  .howContainer .howWrapper .howContent {
+    flex-direction: column;
+    position: relative;
+  }
+  .howContainer .howWrapper .howContent .howImage {
+    position: absolute;
+    bottom: 0;
+  }
+  .howContainer .howWrapper .howContent .howInfo {
+    width: 90vw;
+    gap: 0;
+  }
+  .howContainer .howWrapper .howContentWrapper {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 769px) {
+  .howContainer {
+    height: 130vh;
+    background-size: 300vh;
+  }
+  .howContainer .howWrapper {
+    height: 130vh;
+  }
+}
+@media screen and (max-width: 686px) {
+  .howContainer {
+    height: 170vh;
+    background-size: 300vh;
+  }
+  .howContainer .howWrapper {
+    height: 170vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .howContainer {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .howContainer .howWrapper .howHeading h1 {
+    font-size: 2rem;
+  }
+  .howContainer .howWrapper .howContentWrapper .howContent .howInfo h1 {
+    font-size: 1.5rem;
+  }
+  .howContainer .howWrapper .howContentWrapper .howContent .howInfo .howInfoText p {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 363px) {
+  .howContainer {
+    height: 190vh;
+    background-size: 300vh;
+  }
+  .howContainer .howWrapper {
+    height: 190vh;
+  }
+  .howContainer .howWrapper .howContentWrapper .howContent .howImage .MuiSvgIcon-root {
+    font-size: 150px;
+  }
+}/*# sourceMappingURL=how.css.map */

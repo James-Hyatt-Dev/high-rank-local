@@ -1,0 +1,195 @@
+.subContainer {
+    margin-top: 5em;
+    z-index: 99;
+
+    .subWrapper {
+        width: 80vw;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        position: relative;
+        padding: 5em;
+
+
+        .subLeft, .subRight {
+            width: 45%;
+            z-index: 1;
+        }
+
+        .subLeft {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            padding-left: 5em;
+
+            .subTop  h1{
+                font-weight: 100;
+                line-height: 1.5;
+            }
+
+            .subTop span {
+                font-weight: normal;;
+            }
+
+            .MuiButtonBase-root {
+                color: var(--secondary);
+                display: flex;
+                gap: 1em;
+                background: var(--primary);
+                border-radius: 0;
+                width: 70%;
+            }
+
+            .MuiButtonBase-root:hover {
+                color: var(--primary);
+                background: var(--secondary);
+            }
+        }
+
+        .subRight {
+            display: flex;
+            margin: auto;
+            justify-content: flex-end;
+
+            .rotate {
+                animation: rotation 50s infinite linear;
+                z-index: 2;
+            }
+        }
+
+        .largeH1 {
+            color: var(--largeH1);
+            font-size: 20rem;
+            position: absolute;
+            font-weight: 800;
+            text-align: right;
+            justify-content: right;
+            top: 0;
+            text-transform: uppercase;;
+        }
+
+        .subBottom {
+            border-left: 6px solid var(--primary);
+            padding-left: 3em;
+            line-height: 1.5;
+
+            p {
+                font-size: 1.5rem;
+                font-weight: 100;
+            }
+        }
+
+    }
+ 
+}
+
+// keyframes
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg)
+    }
+}
+
+// media queries
+
+@media screen and (max-width:1532px) {
+    .subContainer .subWrapper {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width:1362px) {
+    .subContainer .subWrapper {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width:1362px) {
+    .subContainer .subWrapper .subRight {
+        width: 50%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1225px) {
+    .subContainer .subWrapper .subLeft {
+        width: 80%;
+    }
+    .subContainer .subWrapper .subRight {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:1120px) {
+    .subContainer .subWrapper .largeH1{
+        font-size: 15rem;
+    }
+}
+
+@media screen and (max-width:861px) {
+    .subContainer .subWrapper .largeH1{
+        font-size: 10rem;
+    }
+
+    .subContainer .subWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subContainer .subWrapper .subLeft {
+        padding-left: 0;
+    }
+
+    .subContainer .subWrapper .subRight, .subLeft {
+        width: 50%;
+    } 
+}
+
+@media screen and (max-width:760px) {
+    .subContainer .subWrapper .subLeft .MuiButtonBase-root {
+        width: 100%;
+    }
+
+    .subContainer .subWrapper .subRight {
+        display: flex;
+        margin: 2em auto;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:591px) {
+    .subContainer .subWrapper .largeH1{
+        font-size: 8em;
+    }
+
+    .subContainer .subWrapper {
+        width: 100vw;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:417px) {
+    .subContainer .subWrapper .largeH1{
+        font-size: 6em;
+    }
+}
+
+@media screen and (max-width:312px) {
+    .subContainer .subWrapper .largeH1{
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width:224px) {
+    .subContainer .subWrapper .largeH1{
+        font-size: 3em;
+    }
+}
+

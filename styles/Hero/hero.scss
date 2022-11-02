@@ -1,0 +1,148 @@
+.heroContainer {
+    width: 100vw;
+    background-image: url('../../public/CapeCoralMap.png');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: center;
+    position: relative;
+
+    .heroWrapper {
+        width: 100vw;
+        height: 88vh;
+        background: var(--background-linear);
+        display: flex;
+        align-items: center;
+       
+        .heroContent {
+            width: 60vw;
+            display: flex;
+            flex-direction: column;
+            margin: -1em auto 0 auto;
+
+            .heroHeading {
+                font-size: 2.5rem;
+                line-height: .8;
+
+                span {
+                    color: var(--primary);
+                }
+            }
+
+            .heroText {
+                font-weight: 100;
+                font-size: 1.5rem;
+                width: 80%;
+                line-height: 1.5;
+
+                span {
+                    font-weight: normal;
+                    font-size: 2rem;
+                    color: var(--primary);
+                }
+            }
+
+            .locationIcon {
+                display: flex;
+                margin: 0 auto;
+
+                .MuiSvgIcon-root {
+                    font-size: 5rem;
+                    position: absolute;
+                    bottom: 0;
+                    animation: bounce 2s;
+                    animation-delay: 2s;
+                    animation-iteration-count: infinite;
+                }
+
+            }
+        }
+    }
+}
+
+@keyframes bounce {
+    0% {margin-bottom: 0;}
+    50% {margin-bottom: 50px;}
+    100% {rotate: (360deg);}
+}
+
+// media queries
+@media screen and (max-width:1597px) {
+    .heroContainer .heroWrapper .heroContent {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width:1472px) {
+    .heroContainer  {
+        background-size: auto;
+    }
+}
+
+@media screen and (max-width:1369px) {
+    .heroContainer .heroWrapper .heroContent {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width:1198px) {
+    .heroContainer .heroWrapper .heroContent {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width:1198px) {
+    .heroContainer .heroWrapper .heroContent .heroHeading h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width:858px) {
+    .heroContainer {
+        text-align: center;
+    }
+    .heroContainer .heroWrapper .heroContent .heroHeading h1 {
+        font-size: 3.5rem;
+    }
+
+    .heroContainer .heroWrapper .heroContent .heroText {
+        font-size: 1.5rem;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:753px) {
+    .heroContainer .heroWrapper .heroContent .heroHeading h1 {
+        line-height: 1;
+    }
+}
+
+@media screen and (max-width:598px) {
+    .heroContainer .heroWrapper .heroContent .locationIcon .MuiSvgIcon-root {
+        display: none;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .heroContainer .heroWrapper {
+        margin-top: 1em;
+    }
+
+    .heroContainer .heroWrapper .heroContent .heroHeading h1 {
+        font-size: 3rem;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    .heroContainer .heroWrapper .heroContent .heroHeading h1 {
+        font-size: 2.5rem;
+    }
+
+    .heroContainer .heroWrapper {
+        margin-top: 3em;
+    }
+
+    .heroContainer .heroWrapper .heroContent .heroText span {
+        font-size: 1.5rem;
+    }
+}

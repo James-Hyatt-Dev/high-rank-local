@@ -1,0 +1,91 @@
+.whoContainer {
+    width: 100vw;
+
+    .whoWrapper {
+        width: 60vw;
+        display: flex;
+        margin: 5em auto 0 auto;
+
+        .whoHeading {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            .whoContent {
+                display: flex;
+                justify-content: space-between;
+                gap: 8em;
+            }
+
+            .whoLeft, .whoRight {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+
+                p {
+                    font-weight: 100;
+                    line-height: 1.5;
+                    font-size: 1.5rem;
+                }
+
+                ol {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                li {
+                    font-weight: 100;
+                    font-size: 1.5rem;
+                }
+            }
+
+            .whoRight {
+                line-height: 1.5;
+            }
+
+        }
+
+    }
+}
+
+// media queries
+
+@media screen and (max-width:1351px) {
+    .whoContainer .whoWrapper {
+        width: 80vw;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:930px) {
+    .whoContainer .whoWrapper {
+        width: 90vw;
+
+        .whoHeading h1 {
+            text-align: center;
+        }
+
+        .whoContent {
+            flex-direction: column;
+            gap: 1em !important;
+
+            .whoLeft, .whoRight {
+                width: 90vw;
+
+                .boldP {
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:376px) {
+    .whoContainer {
+        margin-top: 10em;
+    }
+}

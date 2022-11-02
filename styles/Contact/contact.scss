@@ -1,0 +1,179 @@
+.contactContainer {
+    width: 100vw;
+    height: 50vh;
+    margin-top: 10em;
+
+    .contactWrapper {
+        width: 50vw;
+        display: flex;
+        margin: auto;
+        
+      
+        .contactForm {
+            border: 1px solid var(--primary);
+            position: relative;
+            width: 50vw;
+            height: 475px;
+            display: flex;
+            justify-content: space-between;
+
+            
+
+            .contactBanner {
+                position: absolute;
+                background: var(--accent);
+                left: 20px;
+                top: -20px;
+                height: 514px;
+                width: 10vw;
+
+                .bannerContent {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 5em 0 0 0;
+
+                    .MuiSvgIcon-root {
+                        font-size: 2.5rem;
+                        margin-top: 2em;
+                    }
+
+                    .MuiSvgIcon-root:hover {
+                        color: var(--link);
+                    }
+                }
+            }
+
+            form {
+                width: 70%;
+                // border: 1px solid pink;
+                position: absolute;
+                right: 0;
+                padding: 2em;
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+
+                input {
+                    padding: .75em;
+                    border: none;
+                }
+
+                .phoneNumber {
+                    display: flex;
+                    align-items: center;
+                    gap: 1em;
+
+                    .phonefield {
+                        display: flex;
+                        gap: 1em;
+                    }
+                }
+
+                .inputGroup .input {
+                    display: flex;
+                    justify-content: space-between;
+
+                    li {
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        gap: 1em;
+                    }
+
+                    .li {
+                        padding-top: 1em;
+                    }
+                }
+
+                .MuiButtonBase-root {
+                    background: var(--primary);
+                    border-radius: 0;
+                    padding: 1em 3em;
+                    margin-top: 2em;
+                    color: var(--secondary);
+                    width: 100%;
+                }
+
+                .MuiButtonBase-root:hover {
+                    color: var(--primary);
+                    background: var(--secondary);
+                }
+            }
+
+        }
+        .hiddenBanner {
+            display: none;
+        }
+    }
+}
+
+// media queries
+@media screen and (max-width:1204px) {
+    .contactContainer .contactWrapper  {
+        width: 80vw;
+        justify-content: center;
+
+        .contactForm {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:753px) {
+    .contactContainer .contactWrapper {
+        flex-direction: column;
+
+        .hiddenBanner {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+
+            .bannerContent {
+                gap: 5em;
+                display: flex;
+                padding-bottom: 2em;
+
+                .MuiSvgIcon-root {
+                    font-size: 3rem;
+
+                    :hover {
+                        color: var(--link);
+                    }
+                }
+            }
+        }
+
+        .contactForm {
+            .contactBanner {
+                display: none;
+            }
+    
+            form {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:530px) {
+    .contactContainer .contactWrapper .contactForm {
+        .phoneNumber {
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width:510px) {
+    // input gtoup
+    .contactContainer .contactWrapper .contactForm  {
+        height: 650px;
+
+        .inputGroup .input {
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+            align-items: center;
+        }
+    }
+}

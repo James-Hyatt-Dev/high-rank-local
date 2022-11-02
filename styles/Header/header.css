@@ -1,0 +1,39 @@
+.headerContainer {
+  width: 100vw;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerContainer .headerLeft, .headerContainer .headerRight {
+  display: flex;
+  align-items: center;
+  padding: 1em 2em 1em 0;
+}
+.headerContainer .headerLeft span, .headerContainer .headerRight span {
+  font-weight: 100;
+}
+.headerContainer .MuiButtonBase-root {
+  background: var(--primary);
+  border-radius: 0;
+  color: var(--secondary);
+}
+
+@media screen and (max-width: 500px) {
+  .headerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .headerContainer .headerLeft, .headerContainer .headerRight {
+    padding: 0;
+  }
+  .headerContainer .MuiButtonBase-root {
+    width: 90vw;
+    display: flex;
+  }
+}
+@media screen and (max-width: 350px) {
+  .headerContainer .headerLeft h1 {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=header.css.map */

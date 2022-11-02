@@ -1,0 +1,48 @@
+.scheduleContainer {
+    width: 100vw;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+
+    .scheduleWrapper {
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        margin: 10em auto 0;
+        align-items: center;
+
+        .scheduleHeading {
+            width: 50vw;
+
+            p {
+                font-weight: 100;
+                line-height: 1.5;
+                font-size: 1.5rem;
+            }
+        }
+
+       
+        .calendly-inline-widget {
+            width: 30vw;
+            height: 600px;
+            margin-top: 2em;
+            color: transparent;
+            border: 1px solid var(--accent);
+        }
+
+            
+    }
+}
+
+// media queries
+
+@media screen and (max-width:511px) {
+    .scheduleContainer .scheduleWrapper {
+        margin: 25em auto 0;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+

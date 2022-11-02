@@ -1,0 +1,142 @@
+.proofContainer {
+  width: 100vw;
+  margin-top: 5em;
+}
+.proofContainer .proofWrapper {
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+}
+.proofContainer .proofWrapper .proofBannerHeading {
+  text-align: center;
+}
+.proofContainer .proofWrapper .reviewGroup .reviews {
+  width: 80vw;
+  display: flex;
+  margin: auto;
+  gap: 2em;
+}
+.proofContainer .proofWrapper .reviewGroup .reviews .review {
+  border: 1px solid var(--accent);
+  width: 33%;
+  padding: 1em;
+}
+.proofContainer .proofWrapper .reviewGroup .reviews .review .reviewTop {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.proofContainer .proofWrapper .reviewGroup .reviews .review .reviewTop .reviewTopLeft {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+.proofContainer .proofWrapper .reviewGroup .reviews .review .reviewTop .reviewTopMiddle {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1em;
+}
+.proofContainer .proofWrapper .reviewGroup .reviews .review .reviewTop .reviewTopMiddle .reviewRating {
+  display: flex;
+  gap: 1em;
+}
+.proofContainer .proofWrapper .reviewGroup .reviews .review .reviewTop .reviewTopMiddle .MuiSvgIcon-root {
+  background: var(--primary);
+}
+.proofContainer .proofWrapper .reviewGroup .reviews .review .reviewTop .reviewTopMiddle .reviewTopRightMobile {
+  display: none;
+}
+.proofContainer .proofWrapper .reviewGroup .reviews .review .reviewTop .owner {
+  font-weight: 700;
+}
+.proofContainer .proofWrapper .reviewGroup .reviews .review .reviewTop .italics {
+  font-style: italic;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+.proofContainer .proofWrapper .reviewGroup .reviews .review .reviewTop a {
+  color: var(--link);
+  text-decoration: none;
+}
+.proofContainer .proofWrapper .reviewGroup .reviews .review .reviewTop a :hover {
+  color: var(--primary);
+}
+.proofContainer .proofWrapper .reviewGroup .reviews .review .reviewTop .reviewTopRight {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.proofContainer .proofWrapper .reviewGroup .reviews .review .reviewTop .reviewTopRight p {
+  color: var(--accent2);
+}
+.proofContainer .proofWrapper .reviewGroup .reviews .review .reviewContent {
+  border-top: 1px solid var(--accent);
+  padding: 1em;
+  line-height: 1.5;
+}
+@media screen and (max-width: 1780px) {
+  .proofContainer .proofWrapper .reviewGroup .reviews {
+    flex-direction: column;
+  }
+  .proofContainer .proofWrapper .reviewGroup .reviews .review {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 777px) {
+  .proofContainer .proofWrapper {
+    gap: 0;
+  }
+  .proofContainer .proofWrapper .proofBanner .proofBannerItems {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    gap: 2em;
+  }
+  .proofContainer .proofWrapper .proofBanner .proofBannerItems img {
+    width: 15%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+@media screen and (max-width: 571px) {
+  .proofContainer .proofWrapper .reviewGroup .reviews .review .reviewTop {
+    flex-direction: column;
+  }
+  .proofContainer .proofWrapper .reviewGroup .reviews .review .reviewTop .reviewTopRight {
+    display: none;
+  }
+  .proofContainer .proofWrapper .reviewGroup .reviews .review .reviewTop .reviewTopMiddle {
+    width: 100%;
+  }
+  .proofContainer .proofWrapper .reviewGroup .reviews .review .reviewTop .reviewTopMiddle .reviewRating {
+    margin: auto;
+    gap: 0;
+  }
+  .proofContainer .proofWrapper .reviewGroup .reviews .review .reviewTop .reviewTopLeft {
+    display: flex;
+    justify-content: center;
+  }
+  .proofContainer .proofWrapper .reviewGroup .reviews .review .reviewTop .reviewTopMiddle .reviewMobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .proofContainer .proofWrapper .reviewGroup .reviews .review .reviewTop .reviewTopMiddle .reviewMobile .reviewTopRightMobile {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+  .proofContainer .proofWrapper .reviewGroup .reviews .review .reviewTop .reviewTopMiddle .reviewMobile .reviewTopRightMobile .MuiSvgIcon-root {
+    background: none;
+  }
+  .proofContainer .proofWrapper .reviewGroup .reviews .review .reviewTop .reviewTopMiddle .reviewMobile .reviewTopRightMobile p {
+    color: var(--accent2);
+  }
+}/*# sourceMappingURL=proof.css.map */

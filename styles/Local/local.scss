@@ -1,0 +1,133 @@
+.localContainer {
+    width: 100vw;
+
+    .localWrapper {
+        width: 70vw;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+
+        .localHeading {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+
+            h1 {
+                font-weight: 100;
+                font-size: 2.7rem;
+
+                span {
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .localMapImage {
+            display: flex;
+            width: 100%;
+            background-image: url('../../public/LocalMap.png');
+            background-repeat: no-repeat;
+            background-size: 35vw;
+            height: 25vh;
+            background-position: right;
+
+            .localMapImageOverlay {
+                background: var(--overlay);
+                height: 100%;
+                width: 100%;
+                
+            }
+        }
+
+        .moreGroup {
+            display: flex;
+            gap: 5em;
+            // align-items: center;
+            justify-content: center;
+            margin-top: 5em;
+
+            .moreItem {
+                background: var(--accent);
+                padding: 3em;
+                width: 34%;
+                text-align: center;
+                position: relative;
+
+                p {
+                    font-size: 1.5rem;
+                    font-weight:100;
+                }
+
+                .moreButton {
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+
+                    .MuiButtonBase-root {
+                        color: var(--secondary);
+                        background: var(--primary);
+                        border-radius: 0;
+                        width: 80%;
+                        margin-top: 2em;
+                        margin-bottom: 1em;
+                    }
+                }
+                // .moreText .moreTextList {
+                //     display: flex;
+                //     flex-direction: column;
+                //     line-height: .1;
+
+                //     p {
+                //         font-weight: normal;
+                //     }
+                // }
+
+            }
+
+        }
+    }
+}
+
+// media queries
+@media screen and (max-width: 1500px) {
+    .localContainer .localWrapper {
+        width: 95vw;
+    } 
+
+    .localContainer .localWrapper .localHeading {
+        justify-content: center;
+    }
+
+    .localContainer .localWrapper .localMapImage { 
+        background-position: center;
+    }
+}
+
+@media screen and (max-width:1109px) {
+    .localContainer .localWrapper .moreGroup {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+
+        .moreItem {
+            width: 90vw;
+        }
+    }
+
+    .localContainer .localWrapper .localMapImage {
+        background-size: 75vw;
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 584px) {
+    .localContainer .localWrapper {
+        text-align: center;
+        display: flex;
+        margin: auto;
+    }
+}
+
+

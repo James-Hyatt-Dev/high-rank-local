@@ -1,0 +1,108 @@
+.diffContainer {
+  width: 100vw;
+}
+.diffContainer .diffWrapper {
+  width: 60vw;
+  margin: 5em auto;
+}
+.diffContainer .diffWrapper .diffHeading {
+  display: flex;
+  flex-direction: column;
+}
+.diffContainer .diffWrapper .diffHeading h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+.diffContainer .diffWrapper .diffHeading p {
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+.diffContainer .diffWrapper .diffContent {
+  display: flex;
+  gap: 10em;
+  align-items: center;
+}
+.diffContainer .diffWrapper .diffContent .diffLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 50%;
+}
+.diffContainer .diffWrapper .diffContent .diffLeft .diffText {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.diffContainer .diffWrapper .diffContent .diffLeft .diffText h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.diffContainer .diffWrapper .diffContent .diffLeft .diffText p {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.diffContainer .diffWrapper .diffContent .diffLeft .diffText p span {
+  font-weight: 600;
+}
+.diffContainer .diffWrapper .diffContent .diffForm {
+  border: 1px solid var(--accent);
+  padding: 2em;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.diffContainer .diffWrapper .diffContent .diffForm p {
+  font-weight: 200;
+  line-height: 1.4;
+  font-size: 1.3rem;
+}
+.diffContainer .diffWrapper .diffContent .diffForm form input {
+  padding: 1em;
+  width: 100%;
+  border: none;
+}
+.diffContainer .diffWrapper .diffContent .diffForm form .MuiButtonBase-root {
+  background: var(--primary);
+  border-radius: 0;
+  color: var(--secondary);
+  width: 100%;
+  margin-top: 3em;
+  border: none;
+  padding: 0.5em;
+}
+.diffContainer .diffWrapper .diffContent .diffForm form .MuiButtonBase-root:hover {
+  color: var(--primary);
+  background: var(--secondary);
+}
+
+@media screen and (max-width: 1500px) {
+  .diffContainer .diffWrapper {
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .diffContainer .diffWrapper {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .diffContainer .diffWrapper {
+    width: 90vw;
+  }
+  .diffContainer .diffWrapper .diffContent {
+    flex-direction: column;
+    gap: 2em;
+  }
+  .diffContainer .diffWrapper .diffContent .diffLeft, .diffContainer .diffWrapper .diffContent .diffForm {
+    width: 80vw;
+  }
+  .diffContainer .diffWrapper .diffContent .diffLeft .diffText {
+    gap: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .diffContainer {
+    text-align: center;
+  }
+}/*# sourceMappingURL=different.css.map */

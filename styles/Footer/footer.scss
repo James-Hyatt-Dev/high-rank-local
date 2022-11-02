@@ -1,0 +1,94 @@
+.footerContainer {
+    width: 100vw;
+    margin-top: 8em;
+  
+    .footerWrapper {
+        width: 100vw;
+
+        hr {
+            box-shadow: 3px 6px 12px #FF4500;
+            width: 90vw;
+            display: flex;
+            margin: auto;
+            border: none;
+            height: 2px;
+        }
+
+        .footerTop {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 2em 10em;
+
+            .footerTopLeft {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+
+                h1 {
+                    color: #FF4500;
+
+                    span {
+                        font-weight: 100;
+                    }
+                }
+
+                a:hover {
+                    color: #45A1DE;
+
+                    h2 {
+                        color: #45A1DE;
+                    }
+                }
+            }
+
+            .footerTopRight {
+                width: 50%;
+                display: flex;
+                justify-content: flex-end;
+                gap: 3em;
+                padding-top: 6em;
+
+                a {
+                    text-decoration: none;
+                    color: whitesmoke;
+                }
+
+                a:hover {
+                    color: #45A1DE;
+                }
+            }
+        }
+
+        .footerBottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 2em;
+
+            .footerBottomLeft {
+                display: flex;
+                align-items: center;
+                gap: 3em;
+
+                span {
+                    
+                }
+            }
+
+            .footerBottomRight {
+                display: flex;
+                gap: 3em;
+
+                a {
+                    text-decoration: none;
+                    color: whitesmoke;
+                }
+
+                a:hover {
+                    color: #45A1DE;
+                }
+            }
+        }
+    }
+}
