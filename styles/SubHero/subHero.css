@@ -1,6 +1,5 @@
 .subContainer {
   margin-top: 5em;
-  z-index: 99;
 }
 .subContainer .subWrapper {
   width: 80vw;
@@ -12,7 +11,6 @@
 }
 .subContainer .subWrapper .subLeft, .subContainer .subWrapper .subRight {
   width: 45%;
-  z-index: 1;
 }
 .subContainer .subWrapper .subLeft {
   display: flex;
@@ -58,6 +56,7 @@
   justify-content: right;
   top: 0;
   text-transform: uppercase;
+  z-index: 2;
 }
 .subContainer .subWrapper .subBottom {
   border-left: 6px solid var(--primary);

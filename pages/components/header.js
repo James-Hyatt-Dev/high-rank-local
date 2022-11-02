@@ -7,7 +7,7 @@ import Image from 'next/image';
 function Header() {
   return (
     <div className="headerContainer">
-        <div className="headerLeft">
+        <div className="headerLeft" href='/'>
             <Image src={HighRankLocalLogo} alt='High Rank Local Logo' width={80} height={80} />  
             <h1>High Rank <span>Local</span></h1>      
         </div>

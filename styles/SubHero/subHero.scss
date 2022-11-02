@@ -1,6 +1,6 @@
 .subContainer {
     margin-top: 5em;
-    z-index: 99;
+
 
     .subWrapper {
         width: 80vw;
@@ -13,7 +13,6 @@
 
         .subLeft, .subRight {
             width: 45%;
-            z-index: 1;
         }
 
         .subLeft {
@@ -65,7 +64,8 @@
             text-align: right;
             justify-content: right;
             top: 0;
-            text-transform: uppercase;;
+            text-transform: uppercase;
+            z-index: 2;
         }
 
         .subBottom {

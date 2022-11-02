@@ -4,11 +4,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background: var(--background);
 }
 .headerContainer .headerLeft, .headerContainer .headerRight {
   display: flex;
   align-items: center;
   padding: 1em 2em 1em 0;
+  z-index: 3;
 }
 .headerContainer .headerLeft span, .headerContainer .headerRight span {
   font-weight: 100;
