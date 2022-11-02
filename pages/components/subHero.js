@@ -1,7 +1,7 @@
 import { Button } from '@mui/material'
 import React from 'react'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import HighRankLocalLogo from '../../public/HighRankLocalLogo.png';
+import HighRankLocalOutlineLogo from '../../public/HighRankLocalOutlineLogo.png';
 import Image from 'next/image';
 import Local from '../components/local.js'
 
@@ -22,7 +22,7 @@ function subHero() {
                 <Button href='/about'>Schedule a High Rank Demo<ArrowForwardIcon /></Button>
             </div>
             <div className="subRight">
-                <Image className='rotate' src={HighRankLocalLogo} width={500} height={500} alt='High Rank Local corporate H R logo'/>
+                <Image className='rotate' src={HighRankLocalOutlineLogo} width={500} height={500} alt='High Rank Local corporate H R logo'/>
             </div>
         </div>
         {/* imported component */}
